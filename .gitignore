@@ -1,0 +1,24 @@
+# Candidate kernels under runs/ ARE tracked (so `codex review` / git history see the
+# actual kernel source, not just the benchmark.csv / candidates.jsonl evidence rows).
+# Only generated/compiled artifacts under runs/ stay ignored (compiled kernels are
+# covered by the *.neff / *.ntff / __pycache__ patterns below).
+workspaces/*/runs/*
+!workspaces/*/runs/*.py
+workspaces/*/profile/
+workspaces/*/logs/
+logs/
+outputs/
+*.neff
+*.ntff
+__pycache__/
+*.pyc
+.humanize/
+
+# .claude/skills/ holds placeholder skill folders (tracked). Their real contents
+# live in a separate NKI kernel library not shipped here; drop them in or symlink
+# per the snippet in README. Ignore any local symlink/build artifacts inside.
+.claude/skills/*/SKILL.md
+
+# Per-op prompt files are generated from prompts/_gen_prompts.py (benchmark-derived
+# content is not checked in); regenerate locally with `python3 prompts/_gen_prompts.py`.
+prompts/*/phase*.md

@@ -1,0 +1,86 @@
+{
+  "adamw[case=2]": {
+    "baseline_latency_ms": 1.3050415000000002,
+    "case_id": "2",
+    "kernel": "adamw_M10944_N2048_0.py",
+    "op": "adamw"
+  },
+  "add_rmsnorm_matmul[case=2]": {
+    "baseline_latency_ms": 1.859287,
+    "case_id": "2",
+    "kernel": "add_rmsnorm_matmul_M4096_N2048_K1024_0.py",
+    "op": "add_rmsnorm_matmul"
+  },
+  "bmm[case=2]": {
+    "baseline_latency_ms": 2.550049,
+    "case_id": "2",
+    "kernel": "bmm_B16_M4096_K64_N4096_0.py",
+    "op": "bmm"
+  },
+  "bmm_softmax[case=2]": {
+    "baseline_latency_ms": 7.2900849999999995,
+    "case_id": "2",
+    "kernel": "bmm_softmax_B16_K64_M4096_N4096_0.py",
+    "op": "bmm_softmax"
+  },
+  "gqa_full[case=0]": {
+    "baseline_latency_ms": 15.579488,
+    "case_id": "0",
+    "kernel": "gqa_full_B1_N4096_QH16_KH8_D128_0.py",
+    "op": "gqa_full"
+  },
+  "lora[case=2]": {
+    "baseline_latency_ms": 14.6644825,
+    "case_id": "2",
+    "kernel": "lora_M4096_N12288_K5120_R128_0.py",
+    "op": "lora"
+  },
+  "mamba[case=2]": {
+    "baseline_latency_ms": 1.258274,
+    "case_id": "2",
+    "kernel": "mamba_M7168_C256_S16_0.py",
+    "op": "mamba"
+  },
+  "matmul[case=3]": {
+    "baseline_latency_ms": 13.581375999999999,
+    "case_id": "3",
+    "kernel": "matmul_M4096_N12288_K5120_0.py",
+    "op": "matmul"
+  },
+  "matmul_add_rmsnorm[case=1]": {
+    "baseline_latency_ms": 3.7684925000000002,
+    "case_id": "1",
+    "kernel": "matmul_add_rmsnorm_M4096_N2048_K2048_0.py",
+    "op": "matmul_add_rmsnorm"
+  },
+  "rmsnorm_matmul[case=2]": {
+    "baseline_latency_ms": 0.502647,
+    "case_id": "2",
+    "kernel": "rmsnorm_matmul_M4096_N2048_K1024_0.py",
+    "op": "rmsnorm_matmul"
+  },
+  "rope_single_freq_apply[case=1]": {
+    "baseline_latency_ms": 1.1417945,
+    "case_id": "1",
+    "kernel": "rope_single_freq_apply_B1_H64_N4096_D128_0.py",
+    "op": "rope_single_freq_apply"
+  },
+  "silu[case=2]": {
+    "baseline_latency_ms": 1.022441,
+    "case_id": "2",
+    "kernel": "silu_M4096_N7168_0.py",
+    "op": "silu"
+  },
+  "swiglu[case=2]": {
+    "baseline_latency_ms": 2.0742570000000002,
+    "case_id": "2",
+    "kernel": "swiglu_M4096_N3072_K1024_0.py",
+    "op": "swiglu"
+  },
+  "transpose_matmul[case=2]": {
+    "baseline_latency_ms": 4.849615,
+    "case_id": "2",
+    "kernel": "transpose_matmul_M4096_K2048_N10944_0.py",
+    "op": "transpose_matmul"
+  }
+}
